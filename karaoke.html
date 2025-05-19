@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de karaoke con Letras Dinamicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./custom.css">    
+</head>
+
+<body>
+    <!-- Título del juego -->
+    <h1 class="text-center m-5">Simulador de karaoke con Letras Dinámicas</h1>
+    <!-- Texto que cambiará cuando el valor del select cambie -->
+    <span class="ms-5">Seleccione una Canción:</span>
+    <!-- Opciones de las canciones a Seleccionar -->
+    <select class="select form-select w-25 ms-5 mb-3" aria-label="Default select example">
+        <option selected disabled>Canciones...</option>
+        <option value="Forever-Alone">Forever Alone - (Paulo Londra)</option>
+        <option value="Lento">Lento - (Santi-P y Moree Neri)</option>
+        <option value="Recien-Soltera">Recién Soltera - (Paulo Londra)</option>
+    </select>
+    <!-- Card donde se ejecutará el proceso del juego -->
+    <div class="card mb-3 container bg-dark">
+        <!-- Se mostrará la letra de la canción línea por línea -->
+        <div class="mostrarLetra mt-3 p-5 bg-dark-subtle text-center">
+            <!-- Se mostrará la línea de la letra ya cantada -->
+            <h4 class="yaCantada text-secondary"></h4>
+            <!-- Se mostrará la línea de la letra a cantar -->
+            <div class=" p-3 text-center">
+                <h3 class="enLinea text-center"></h3>
+            </div>
+        </div>
+        <!-- Datos de la Canción seleccionada y se insertará dos botones de "Siguiente Línea" y "Reiniciar Canción" -->
+        <div class="card-body row p-5">
+            <!-- Cambiará al nombre de la canción seleccionada -->
+            <h4 class="col-6 card-title text-light">Canción...</h4>
+            <!-- Cambiará al nombre del artista de la Canción seleccionada -->
+            <p class="card-text"><small class="text-secondary">Artista...</small></p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+<script src="./karaoke.js"></script>
+
+</html>

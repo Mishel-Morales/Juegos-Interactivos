@@ -1,0 +1,12 @@
+.border{
+    background: linear-gradient(45deg, #1e2ad2, #Ffa6b7);
+}
+.border:hover {
+    box-shadow: 0 8px 20px #002661;
+}
+.ganador{
+    background: linear-gradient(45deg, #93CBF1, #87F4B5);
+}
+.fondo{
+    background: linear-gradient(#1B07A4, #02AAF3);
+}
